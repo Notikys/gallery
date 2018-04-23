@@ -15,7 +15,7 @@
 </head>
 <body>
 <?php echo "Alpha version "?>
-<p class="imglist" style="max-width: 1000px;">
+<p class="imglist" style="max-width: 100%;">
     <?php
     //variable
     ?>

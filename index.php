@@ -5,57 +5,106 @@
     <?php
         include ('./includes/variables.php');
     ?>
+
+    <?php
+    // consntant
+    ?>
+
     <?php
         echo title;
     ?>
-    <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.css" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.js"></script>
+    <link rel="stylesheet" href="src/css/jquery.fancybox.css" />
+    <link rel="stylesheet" href="src/css/main.css" />
 </head>
     <body>
+
+        <div align="center">
         <?php echo "Alpha version "?>
-        <div class="card-deck col-9">
+        </div>
+        <p class="card-deck col-9">
             <p class="imglist" style="max-width: 100%;">
+
                 <?php
                     //variable
                  ?>
-            <a href="<?php echo "https://source.unsplash.com/juHayWuaaoQ/1500x1000"?>" data-fancybox="images">
+
+            <div class="block1">
+                <a href="<?php echo "https://source.unsplash.com/juHayWuaaoQ/1500x1000"?>" data-fancybox="images">
                 <?php
                 echo "$image1";
                 ?>
-            <a href="<?php echo "https://source.unsplash.com/eWFdaPRFjwE/1500x1000"?>" data-fancybox="images">
+                </a>
+            </div>
+
+            <div class="block2">
+                <a href="<?php echo "https://source.unsplash.com/eWFdaPRFjwE/1500x1000"?>" data-fancybox="images">
                 <?php
                 echo "$image2";
                 ?>
             </a>
+            </div>
 
+            <div class="block3">
             <a href="<?php echo "https://source.unsplash.com/i2KibvLYjqk/1500x1000"?>" data-fancybox="images">
                 <?php
                 echo "$image3";
                 ?>
             </a>
+            </div>
 
+            <div class="block4">
             <a href="<?php echo "https://source.unsplash.com/RFgO9B_OR4g/1500x1000"?>" data-fancybox="images">
                 <?php
                 echo "$image4";
                 ?>
             </a>
+            </div>
 
+            <div class="block5">
             <a href="<?php echo "https://source.unsplash.com/7bwQXzbF6KE/1500x1000"?>" data-fancybox="images">
                 <?php
                 echo "$image5";
                 ?>
             </a>
+            </div>
 
+            <div class="block6">
             <a href="<?php echo "https://source.unsplash.com/NhU0nUR7920/1500x1000"?>" data-fancybox="images">
                 <?php
                 echo "$image6";
                 ?>
             </a>
-            </p>
+            </div>
+
+        <div class="block7">
+            <a href="<?php echo "https://source.unsplash.com/random/1500x1000"?>" data-fancybox="images">
+                <?php
+                echo "$image7";
+                ?>
+            </a>
         </div>
-        <p >
-             Powered by Notikys &#169
-        </p>
+
+        <div class="block8">
+            <a href="<?php echo "https://source.unsplash.com/random/1500x1000"?>" data-fancybox="images">
+                <?php
+                echo "$image8";
+                ?>
+            </a>
+        </div>
+
+        <div class="block9">
+            <a href="<?php echo "https://unsplash.com/photos/random/1500x1000"?>" data-fancybox="images">
+                <?php
+                echo "$image9";
+                ?>
+            </a>
+        </div>
+
+
+        <div align="right">
+            <?php echo "Powered by Notikys &#169"?>
+        </div>
+        <script src="src/js/jQuery.js"></script>
+        <script src="src/js/jquery.fancybox.js"></script>
     </body>
 </html>

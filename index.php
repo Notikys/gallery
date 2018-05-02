@@ -19,10 +19,9 @@
     <body>
 
         <div align="center">
-        <?php echo "Alpha version "?>
+        <?php echo "Alpha version 0,2 "?>
         </div>
-        <p class="card-deck col-9">
-            <p class="imglist" style="max-width: 100%;">
+            <div class="imglist" style="max-width: 100%;">
 
                 <?php
                     //variable
@@ -76,32 +75,34 @@
             </a>
             </div>
 
-        <div class="block7">
-            <a href="<?php echo "https://source.unsplash.com/random/1500x1000"?>" data-fancybox="images">
-                <?php
-                echo "$image7";
-                ?>
-            </a>
-        </div>
+             <div class="block7">
+                <a href="<?php echo "https://source.unsplash.com/random/1500x1000"?>" data-fancybox="images">
+                    <?php
+                    echo "$image7";
+                    ?>
+                </a>
+            </div>
 
-        <div class="block8">
-            <a href="<?php echo "https://source.unsplash.com/random/1500x1000"?>" data-fancybox="images">
-                <?php
-                echo "$image8";
-                ?>
-            </a>
-        </div>
+            <div class="block8">
+                <a href="<?php echo "https://source.unsplash.com/random/1500x1000"?>" data-fancybox="images">
+                    <?php
+                    echo "$image8";
+                    ?>
+                </a>
+            </div>
 
-        <div class="block9">
-            <a href="<?php echo "https://unsplash.com/photos/random/1500x1000"?>" data-fancybox="images">
-                <?php
-                echo "$image9";
-                ?>
-            </a>
-        </div>
+            <div class="block9">
+                <a href="<?php echo "https://unsplash.com/random/1500x1000"?>" data-fancybox="images">
+                    <?php
+                    echo "$image9";
+                    ?>
+                </a>
+            </div>
+           </div>
+        
+            <hr>
 
-
-        <div align="right">
+        <div class="footer" align="right">
             <?php echo "Powered by Notikys &#169"?>
         </div>
         <script src="src/js/jQuery.js"></script>

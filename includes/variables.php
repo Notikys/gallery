@@ -1,5 +1,5 @@
 <?php
-//constant
+//variable
 
         define('title', '<title>Gallery</title>');
 

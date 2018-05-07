@@ -1,11 +1,16 @@
 <?php
-$images = array(
-    'url' => 'https://source.unsplash.com/juHayWuaaoQ/1500x1000',
-    'name' => 'First image',
-    'width' => '1500px',
-    'height' => '1000px',
-    );
-    array(
+    $picsom = 'https://picsum.photos/list';
+foreach (array_slice(json_decode($picsom, true), 0, 9) as $key => $value) {
+    $images[] = [
+        'url' => $value['post_url'] . '/download',
+        'thumbnail' => $value['post_url'] . '/download',
+        'description' => $value['author'],
+        'width' => $value['width'],
+        'height' => $value['height']
+    ];
+}
+
+    /*array(
         'url' => 'https://source.unsplash.com/eWFdaPRFjwE/1500x1000',
         'name' => 'Second image',
         'width' => '1500px',
@@ -53,4 +58,4 @@ $images = array(
         'name' => 'Ninth image',
         'width' => '1500px',
         'height' => '1000px',
-    );
+    );*/

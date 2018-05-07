@@ -4,19 +4,16 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <?php
         include ('./includes/variables.php');
+        include ('./includes/massif.php');
     ?>
+    <?php // consntant ?>
 
-    <?php
-    // consntant
-    ?>
-
-    <?php
-        echo title;
-    ?>
+    <?php echo title;?>
     <link rel="stylesheet" href="src/css/jquery.fancybox.css" />
     <link rel="stylesheet" href="src/css/main.css" />
 </head>
     <body>
+    <?php// foreach ($images as $image): ?>
 
         <div align="center">
         <?php echo "Alpha version 0,2 "?>
@@ -26,6 +23,7 @@
                 <?php
                     //variable
                  ?>
+                href="<?php // echo isset($images['url']) ? $images['url'] : IMAGE_PLACEHOLDER ?>">
 
             <div class="block1">
                 <a href="<?php echo "https://source.unsplash.com/juHayWuaaoQ/1500x1000"?>" data-fancybox="images">
